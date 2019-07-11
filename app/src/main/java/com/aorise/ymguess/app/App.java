@@ -17,10 +17,10 @@ public class App extends Application {
     public void onCreate() {
         super.onCreate();
         ToastUtils.init(this);
-        if (!QbSdk.isTbsCoreInited()) {
-            QbSdk.preInit(getApplicationContext(), null);// 设置X5初始化完成的回调接口
-        }
-        QbSdk.setDownloadWithoutWifi(true);
+//        if (!QbSdk.isTbsCoreInited()) {
+//            QbSdk.preInit(getApplicationContext(), null);// 设置X5初始化完成的回调接口
+//        }
+//        QbSdk.setDownloadWithoutWifi(true);
         //搜集本地tbs内核信息并上报服务器，服务器返回结果决定使用哪个内核。
         QbSdk.PreInitCallback cb = new QbSdk.PreInitCallback() {
             @Override
