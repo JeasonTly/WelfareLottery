@@ -18,10 +18,8 @@
         <item name="colorPrimary">#cf271e</item>
         <item name="colorPrimaryDark">#cf271e</item>
         <item name="colorAccent">#cf271e</item>
-        <item name="android:windowNoTitle">true</item>
-        <item name="android:windowFullscreen">false</item>
         <item name="android:statusBarColor">#cf271e</item>
-        <item name="android:windowBackground">@drawable/welcome</item>
+
     </style>
     <style name="Animation">
         <item name="android:activityOpenEnterAnimation">@null</item>

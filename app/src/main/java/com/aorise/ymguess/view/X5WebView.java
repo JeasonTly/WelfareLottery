@@ -4,6 +4,7 @@ import android.annotation.SuppressLint;
 import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Paint;
+import android.os.Build;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.view.View;
@@ -37,7 +38,7 @@ public class X5WebView extends WebView {
 		// WebStorage webStorage = WebStorage.getInstance();
 		initWebViewSettings();
 		this.getView().setClickable(true);
-		Log.d("X5WebView","init..... ");
+		Log.d("app","init..... ");
 	}
 
 	private void initWebViewSettings() {
@@ -73,17 +74,17 @@ public class X5WebView extends WebView {
 		paint.setColor(0x7fff0000);
 		paint.setTextSize(24.f);
 		paint.setAntiAlias(true);
-		if (getX5WebViewExtension() != null) {
-			canvas.drawText(this.getContext().getPackageName() + "-pid:"
-					+ android.os.Process.myPid(), 10, 50, paint);
-			canvas.drawText(
-					"X5  Core:" + QbSdk.getTbsVersion(this.getContext()), 10,
-					100, paint);
-		} else {
-			canvas.drawText(this.getContext().getPackageName() + "-pid:"
-					+ android.os.Process.myPid(), 10, 50, paint);
-			canvas.drawText("Sys Core", 10, 100, paint);
-		}
+//		if (getX5WebViewExtension() != null) {
+//			canvas.drawText(this.getContext().getPackageName() + "-pid:"
+//					+ android.os.Process.myPid(), 10, 50, paint);
+//			canvas.drawText(
+//					"X5  Core:" + QbSdk.getTbsVersion(this.getContext()), 10,
+//					100, paint);
+//		} else {
+//			canvas.drawText(this.getContext().getPackageName() + "-pid:"
+//					+ android.os.Process.myPid(), 10, 50, paint);
+//			canvas.drawText("Sys Core", 10, 100, paint);
+//		}
 //		canvas.drawText(Build.MANUFACTURER, 10, 150, paint);
 //		canvas.drawText(Build.MODEL, 10, 200, paint);
 		canvas.restore();

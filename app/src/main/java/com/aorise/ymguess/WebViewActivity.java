@@ -122,8 +122,8 @@ public class WebViewActivity extends AppCompatActivity {
             }
         });
          mWebView.loadUrl("https://f8cp.i8app.app/");
-        //  mWebView.loadUrl("https://m.7782a.com/home");
-        //mWebView.loadUrl("https://dfcp.isutils.com/");
+         // mWebView.loadUrl("https://m.7782a.com/home");
+       // mWebView.loadUrl("https://dfcp.isutils.com/");
 
         initDatas();
 
@@ -233,7 +233,7 @@ public class WebViewActivity extends AppCompatActivity {
 
                     mWebView.loadUrl("https://f8cp.i8app.app/");
                     // mWebView.loadUrl("https://m.7782a.com/home");
-                    //mWebView.loadUrl("https://dfcp.isutils.com/");
+                   // mWebView.loadUrl("https://dfcp.isutils.com/");
                 } else if (index == 4) {//返回
                     mWebView.goBack();
                 } else if (index == 5) {//清楚缓存
