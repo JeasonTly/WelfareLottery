@@ -8,6 +8,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.KeyEvent;
 import android.view.View;
 import android.view.Window;
@@ -21,6 +22,7 @@ import com.hjq.toast.ToastUtils;
 import com.rance.library.ButtonData;
 import com.rance.library.ButtonEventListener;
 import com.rance.library.SectorMenuButton;
+import com.tencent.smtt.sdk.QbSdk;
 import com.tencent.smtt.sdk.ValueCallback;
 import com.tencent.smtt.sdk.WebChromeClient;
 import com.tencent.smtt.sdk.WebView;
@@ -54,7 +56,9 @@ public class WebViewActivity extends AppCompatActivity {
 //        getWindow().setFlags(WindowManager.LayoutParams. FLAG_FULLSCREEN ,
 //                WindowManager.LayoutParams. FLAG_FULLSCREEN);
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.common_activity_webview);
+
         mSectorMenuButton = findViewById(R.id.center_sector_menu);
         mSectorMenuButton.setVisibility(View.GONE);
         mWebView = (X5WebView) findViewById(R.id.x5webView);
@@ -123,7 +127,7 @@ public class WebViewActivity extends AppCompatActivity {
         });
          mWebView.loadUrl("https://f8cp.i8app.app/");
          // mWebView.loadUrl("https://m.7782a.com/home");
-       // mWebView.loadUrl("https://dfcp.isutils.com/");
+        //mWebView.loadUrl("https://dfcp.isutils.com/");
 
         initDatas();
 

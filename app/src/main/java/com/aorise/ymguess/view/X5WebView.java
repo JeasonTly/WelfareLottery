@@ -38,7 +38,7 @@ public class X5WebView extends WebView {
 		// WebStorage webStorage = WebStorage.getInstance();
 		initWebViewSettings();
 		this.getView().setClickable(true);
-		Log.d("app","init..... ");
+		Log.d("appTLY","init..... ");
 	}
 
 	private void initWebViewSettings() {
@@ -74,6 +74,12 @@ public class X5WebView extends WebView {
 		paint.setColor(0x7fff0000);
 		paint.setTextSize(24.f);
 		paint.setAntiAlias(true);
+		if (getX5WebViewExtension() != null) {
+			Log.d("appTLY", " X5 CORE " + QbSdk.getTbsVersion(this.getContext()));
+
+		}else{
+			Log.d("appTLY", " Sys CORE ");
+		}
 //		if (getX5WebViewExtension() != null) {
 //			canvas.drawText(this.getContext().getPackageName() + "-pid:"
 //					+ android.os.Process.myPid(), 10, 50, paint);
